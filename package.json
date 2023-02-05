@@ -19,6 +19,7 @@
   "homepage": "https://github.com/fadhilsurya/training-chapter-5-gold-bej-binar#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-validator": "^6.14.3",
     "pg": "^8.9.0",

@@ -4,6 +4,19 @@ const { body, validationResult } = require('express-validator')
 
 // in this file we separate router to from the main /user address to smaller one such as
 const userClass = new user()
+
+router.get('/', (req, res, next) => {
+    res.render('home')
+})
+
+router.get('/register', (req, res, next) => {
+    res.render('register')
+})
+
+router.get('/login', (req, res, next) => {
+    res.render('login')
+})
+
 router.get('/', (req, res, next) => {
 
     userClass.getAllUser()

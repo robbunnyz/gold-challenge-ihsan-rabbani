@@ -10,10 +10,21 @@ app.use(express.urlencoded({
     extended: false
 }))
 
+app.set('view engine', 'ejs')
 app.use('/users', usersRoute)
 app.use('/items', itemsRoute)
 
-// testing connection and connect for sequelize here
+// app.get('/', (req, res, next) => {
+//     res.render('home')
+// })
+
+// app.get('/register', (req, res, next) => {
+//     res.render('register')
+// })
+
+// app.get('/login', (req, res, next) => {
+//     res.render('login')
+// })
 
 app.listen(port, () => {
     if (process.env.ENV == 'DEV') {
